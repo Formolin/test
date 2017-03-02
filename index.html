@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet/less" href="less/index.less">-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <title>安天</title>
+    <!--[if lt IE 9]>
+<script src="html/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body ng-app="myApp">
+<header id="header" ng-controller="headerController">
+    <!--nav开始-->
+    <nav class="navbar navbar-default navbar-fixed-top hov" ng-class="{white:flag}" ng-mouseover="bgw()" ng-mouseleave="bgb()">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ng-click="myHide()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i></i><p class="pull-left">安天</p><span class="pull-left">|&nbsp&nbsp&nbsp智者安天下</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+                <ul class="nav navbar-nav navbar-right uls">
+                    <li class="jiage">
+                        <a href="index.html">首页</a>
+
+                    </li>
+                    <li >
+                        <a href="html/weixiefangyu.html" >解决方案</a>
+                        <ul >
+
+                            <li class="pro" ><a href="html/weixiefangyu.html" target="_blank">威胁防御</a></li>
+                            <li class="pro"><a href="">态势感知</a></li>
+                            <li class="pro"><a href="html/zhengfu.html">政府行业</a></li>
+                            <li class="pro"><a href="html/nengyuan.html">能源行业</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">政府行业</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">金融行业</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">运营商行业</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="html/weixiefangyu.html">安全产品</a>
+                        <ul>
+                            <li class="pro"><a href="html/weixiefangyu.html">网络侧安全</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">终端侧安全</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">威胁深度鉴定</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">引擎类</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/weixiefangyu.html" >服务与支持</a>
+                        <ul>
+                            <li class="pro"><a href="html/weixiefangyu.html">软件升级</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">售后服务</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">安全培训服务</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">安全技术服务</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/weixiefangyu.html" >合作伙伴</a>
+                        <ul>
+                            <li class="pro"><a href="html/weixiefangyu.html">渠道政策</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">申请合作</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/weixiefangyu.html" >安全研究</a>
+                        <ul>
+                            <li class="pro"><a href="html/weixiefangyu.html">威胁响应</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">公告与报告</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">安全团队</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/weixiefangyu.html" >关于我们</a>
+                        <ul>
+                            <li class="pro"><a href="html/weixiefangyu.html">走进安天</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">企业新闻</a></li>
+                            <li class="pro"><a href="html/weixiefangyu.html">工作机会</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="weixin pull-right"></a>
+                        <a href="" class="weibo pull-right"></a>
+
+                    </li>
+
+                    <!--<li class="last">-->
+                        <!--<a href="" class="login"><button type="button" class="btn btn-success ">登录</button></a>-->
+                        <!--<ul>-->
+                            <!--<li class="pro"><a href="">登录企业版</a></li>-->
+                            <!--<li class="pro"><a href="">登陆基础版</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+
+
+                </ul>
+            <div class="collapse navbar-collapse navbarWidth" id="bs-example-navbar-collapse-1">
+               <ul class="hideUl">
+                   <li class="box text-center" ><a href="html/weixiefangyu.html">下一代威胁防御解决方案</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">态势感知</a></li>
+                   <li class="box text-center"><a href="html/zhengfu.html">政府行业解决方案</a></li>
+                   <li class="box text-center"><a href="html/nengyuan.html">能源行业解决方案</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">金融行业解决方案</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">运营商行业解决方案</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">网络侧安全</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">终端侧安全</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">威胁深度鉴定</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">引擎类</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">客户支持</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">安全服务</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">渠道政策</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">申请合作</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">威胁响应</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">公告与报告</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">安全团队</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">走进安天</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">企业新闻</a></li>
+                   <li class="box text-center"><a href="html/weixiefangyu.html">工作机会</a></li>
+                   <!--<li class="box text-center"><a href="" class="last btn btn-regist">注册</a></li>-->
+               </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<!--nav结束-->
+
+
+    <!--轮播图开始-->
+   <div class="slider">
+       <div class="box">
+          <div class="imgs cur one" style="background-image: url('img/index_all_bg_0.jpg')">
+             <div class="container">
+                 <div class="content-one text-center">
+                     白象的舞步
+                 </div>
+                 <div class="content-two text-center">
+                    <p>来自南亚次大陆的网络攻击<br>
+                        &nbsp;</p>
+                 </div>
+                 <div class="content-three text-center">
+                     <a href="html/weixiefangyu.html" >了解详情</a>
+                 </div>
+             </div>
+          </div>
+          <div class="imgs one" style="background-image: url('img/index_all_bg_1.jpg')">
+              <div class="container">
+                  <div class="content-one text-center">
+                       冰封屹立+<img src="img/index_all_bg_dingtalk_icon.png" width="48" height="60" alt="">
+                  </div>
+                  <div class="content-two text-center">
+                     <p>网络安全冬训营</p>
+                  </div>
+                  <div class="content-three text-center">
+                      <a href="html/weixiefangyu.html" >了解详情</a>
+                      <h4>有效防护&nbsp价值输出</h4><br/>
+                      安天网络安全有效价值研讨会
+                  </div>
+              </div>
+          </div>
+          <div class="imgs one" style="background-image: url('img/index_all_bg_2.jpg')">
+              <div class="container">
+                  <div class="content-one text-center">
+                      方程式组织攻击系列分析报告
+                  </div>
+                  <div class="content-two text-center">
+                      <p>安天独家深度曝光分析方程式组织
+                          <br>
+                          多平台恶意代码武器</p>
+                  </div>
+                  <div class="content-three text-center" style="font-size: 18px">
+                      <a href="html/weixiefangyu.html" >了解详情</a>
+                      <br/>
+                      <!--免费获取解决方案 &gt;&gt;-->
+                  </div>
+              </div>
+          </div>
+          <div class="imgs one" style="background-image: url('img/index_all_bg_7.jpg')">
+              <div class="container">
+                  <div class="content-one text-center">
+                     安天智甲终端防御系统
+                  </div>
+                  <div class="content-two text-center">
+                     <p> 一款真正可防勒索软件的<br>
+                        安全产品</p>
+                  </div>
+                  <div class="content-three text-center">
+                      <a href="html/weixiefangyu.html" >了解详情</a>
+                      <br/>
+                      <!--免费获取解决方案 &gt;&gt;-->
+                  </div>
+              </div>
+          </div>
+       </div>
+       <div class="ctrl">
+           <ol class="carousel-indicators" style="margin-bottom: 50px">
+               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+           </ol>
+       </div>
+
+   </div>
+    <!--轮播图结束-->
+</header>
+
+<!--header end-->
+
+<section id="pros">
+    <div class="container">
+        <div class="row">
+            <div class="active lis col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <!--<img src="img/index-tab-1.png" alt="">-->
+                    <p>安全产品</p>
+                </a>
+            </div>
+            <div class=" lis col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <!--<img src="img/index-tab-2.png" alt="">-->
+                    <p>服务与支持</p>
+                </a>
+            </div>
+            <div class=" lis col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <!--<img src="img/index-tab-3.png" alt="">-->
+                    <p>解决方案</p>
+                </a>
+            </div>
+            <div class=" lis col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <!--<img src="img/index-tab-4.png" alt="">-->
+                    <p>关于我们</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab">
+
+
+                <ul>
+                    <li class="current">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-fire"></i>
+                                    <h3>安天镇关威胁阻断系统</h3>
+                                    <p>产品介绍 安天镇关威胁阻断系统（即安天镇关千兆防火墙，以下简称镇关），英文名称PTF,是安天研发的全面保障L2-L7安全的新一代应用安全防火墙产品.产品采用X86多核硬件平台，结...
+                                        <br><br></p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-eye-open"></i>
+                                    <h3 class="text-center">安天探海威胁检测系统</h3>
+                                    <p>安天探海威胁检测系统（以下简称“探海”），英文名称PTD，是安天自主研发的网络威胁检测设备，可有效检测0day漏洞利用、格式文档溢出等未知威胁，发现APT攻击，帮助用户及时发现威胁，...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-flash"></i>
+                                    <h3>安天智甲终端防御系统</h3>
+                                    <p>产品介绍 安天智甲终端防御系统即安天私有云安全系统（以下简称智甲），英文名称IEP，是专为企业、政府、机构等业务网络研发的终端威胁安全防护产品。该产品集成安天完全自主研...<br><br></p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-unchecked"></i>
+                                    <h3>安天智甲ATM防护</h3>
+                                    <p>部署方式 安天智甲终端防护系统ATM防护方案部署示意图如下： 关于安天 安天从反病毒引擎研发团队起步，目前已发展成为拥有四个研发中心、监控预警能力覆盖全国、产品与服务辐射...<br><br></p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 item1">
+                                    <i class="glyphicon glyphicon-exclamation-sign"></i>
+                                    <h3>安天智甲PC反病毒</h3>
+                                    <p>国产操作系统防护 智甲提供基于国产操作系统（中标麒麟、中科方德、银河麒麟）的病毒扫描、实时监控、漏洞修复和网络防护功能，并支持国产龙芯、兆芯、飞腾CPU。 部署方式 智甲...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-pushpin"></i>
+                                    <h3>安天智甲防勒索</h3>
+                                    <p>下图为智甲分布式部署示意图。在企业的核心区域，部署一级控制中心，在每个分区域部署二级控制中心。二级控制中心管理本区域的终端，向一级控制中心上报终端安全数据，并从一...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+
+                                    <i class="glyphicon glyphicon-link"></i>
+                                    <h3>安天智甲虚拟化</h3>
+                                    <p>部署方式 安天智甲终端防护系统虚拟化防护方案部署示意图如下： 安天智甲终端防御系统虚拟化安全防护方案 方案介绍 随着网络技术的快速发展，虚拟化技术的应用更加广泛，服务器...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 item1">
+                                    <i class="glyphicon glyphicon-sound-dolby"></i>
+                                    <h3>安天追影威胁分析系统</h3>
+                                    <p>产品介绍 安天追影威胁分析系统（以下简称追影），英文名称PTA，是安天自主研发的深度威胁鉴定设备，可对文档文件、可执行文件、URL等对象进行深度安全分析，有效检出各类已知威...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 item1">
+
+                                    <i class="glyphicon glyphicon-phone"></i>
+                                    <h3>AVL SDK for Mobile</h3>
+                                    <p>国产操作系统防护 智甲提供基于国产操作系统（中标麒麟、中科方德、银河麒麟）的病毒扫描、实时监控、漏洞修复和网络防护功能，并支持国产龙芯、兆芯、飞腾CPU。 部署方式 智甲...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+
+                                </div>
+                                <div class="col-md-6 item1">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                    <h3>AVL SDK for network</h3>
+                                    <p>AVL SDK可嵌入式反病毒引擎 AVL SDK可嵌入式反病毒引擎（简称AVL SDK）是由安天公司自研的反病毒引擎产品。提供全套的可调用API（应用编程接口），为网络安全产品扩展反病毒能力提供简...</p>
+                                    <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="top">
+                                        <h3>软件升级</h3>
+                                        <p>"为客户提供产品软件大版本升级的服务；产品安装、调试和使用服务，含一定时间的现场产品使用培训，使客户的产品具备新功能、新特性。"</p>
+                                        <a href="html/weixiefangyu.html">查看详情</a>
+                                        <img src="img/11.png" alt="">
+                                        <span></span>
+
+                                    </div>
+                                    <div class="bottom">
+                                        <h3>安全培训服务</h3>
+                                        <p>"为更好的服务于用户，为用户网络安全保驾护航，安天提供产品增值安全服务，包括：安全评估解及解决方案、安全事件深度分析服务、安全专家驻场服务、恶意程序专杀服务以及安全培训服务"</p>
+                                        <a class="ck" href="html/weixiefangyu.html">查看详情</a>
+                                        <img src="img/44.png" alt="">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bottom">
+                                        <h3>售后服务</h3>
+                                        <p>"为了解决您在使用安天科技产品和服务的过程中遇到的各种问题和困难，我们面向全国范围设立了客户服务热线，在提供远程安全技术支持服务的同时，还为您提供常见网络安全问题咨询。"</p>
+                                        <a href="html/weixiefangyu.html">查看详情</a>
+                                        <img class="it" src="img/22.png" alt="">
+                                        <span class="shouhou"></span>
+                                    </div>
+                                    <div class="top">
+                                        <h3>安全技术服务</h3>
+                                        <p>"安天自2000年成立以来，长期专注于反病毒引擎研发以及反病毒技术的改进与提高，在反病毒行业拥有深厚沉淀与积累，多年来为各行业合作伙伴与用户提供了专业、有效的网络安全服务，能力"</p>
+                                        <a href="">查看详情</a>
+                                        <img src="img/33.jpg" alt="">
+                                        <span></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row" style="margin-bottom: 30px">
+                                <div class="col-md-5">
+                                    <div class="small" style="background-image: url('img/j1.jpg')">
+                                        <!--<img src="img/j1.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                        
+                                            <div class="up"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                            <div class="down text-center"><h3>下一代威胁防御解决方案</h3><p>安天反APT综合解决方案</p></div>
+
+                                        </a>
+                                        <div class="spans">
+                                            <span class="s1"></span>
+                                            <span class="s2"></span>
+                                            <span class="s3"></span>
+                                            <span class="s4"></span>
+                                            <span class="s5"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <!-- 行内式背景缩放-->
+                                    <div class="big" style="background-image: url('img/j4.jpg');transition: all 0.3s linear;" onmouseout="this.style.backgroundSize='100%'" onmousemove="this.style.backgroundSize='120%'">
+                                        <!--<img src="img/j4.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                            <div class="box">
+                                                <h3>运营商解决方案</h3>
+                                                <p>现状、问题、方案、价值</p>
+                                            </div>
+
+                                        </a>
+                                        <div class="dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 30px">
+                                <div class="col-md-7">
+                                    <div class="big" style="background-image: url('img/j5.jpg');transition: all 0.3s linear;" onmouseout="this.style.backgroundSize='100%'" onmousemove="this.style.backgroundSize='120%'">
+                                        <!--<img src="img/j5.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                            <div class="box">
+                                                <h3>金融行业解决方案</h3>
+                                                <p>挑战、方案、价值</p>
+                                            </div>
+
+                                        </a>
+                                        <div class="dark"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="small ts" style="background-image: url('img/j2.jpg')">
+                                        <!--<img src="img/j2.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                            <div class="up"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                            <div class="down text-center"><h3>态势感知</h3></div>
+
+                                        </a>
+                                        <div class="spans">
+                                            <span class="s1"></span>
+                                            <span class="s2"></span>
+                                            <span class="s3"></span>
+                                            <span class="s4"></span>
+                                            <span class="s5"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 30px">
+                                <div class="col-md-5">
+                                    <div class="small" style="background-image: url('img/j3.jpg')">
+                                        <!--<img src="img/j3.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                            <div class="up"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                            <div class="down text-center"><h3>政府行业解决方案</h3><p>现状、挑战、价值、案例</p></div>
+
+                                        </a>
+                                        <div class="spans">
+                                            <span class="s1"></span>
+                                            <span class="s2"></span>
+                                            <span class="s3"></span>
+                                            <span class="s4"></span>
+                                            <span class="s5"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="big" style="background-image: url('img/j6.jpg');transition: all 0.3s linear;" onmouseout="this.style.backgroundSize='100%'" onmousemove="this.style.backgroundSize='120%'">
+                                        <!--<img src="img/j6.jpg" alt=""/>-->
+                                        <a href="html/weixiefangyu.html">
+                                            <div class="box">
+                                                <h3>能源行业解决方案</h3>
+                                                <p>介绍、优势、部署方式</p>
+                                            </div>
+
+                                        </a>
+                                        <div class="dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="uu u1">
+                                        <div class="l pull-left">
+                                            <h3>公司概况</h3>
+                                            <p>安天从反病毒引擎研发团队起步，目前已发展成为以安天实验室为总部，以企业安全公司、移动安全公司为两翼的集团化安全企业。安天始终坚持以安全保障用户价值为企业信仰，崇尚自主研发创新，在安全检测引擎、移动安全、网络协议分析还原、动态分析、终端防护、虚拟化安全等方面形成了全能力链</p>
+                                            <a href="html/weixiefangyu.html" class="pull-right">查看详情</a>
+                                        </div>
+                                        <div class="r pull-right">
+                                            <img src="img/rongyu.jpg" alt=""/>
+                                            <h3 class="text-center">荣誉资质</h3>
+                                            <a href="html/weixiefangyu.html" class="text-center">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="dd u2">
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="item active" style="background-image: url('img/11111.jpg')">
+
+
+                                                </div>
+                                                <div class="item" style="background-image: url('img/222222.jpg')">
+
+
+                                                </div>
+                                                <div class="item" style="background-image: url('img/3333333.jpg')">
+
+
+                                                </div>
+                                                <div class="item" style="background-image: url('img/44444444.jpg')">
+
+
+                                                </div>
+                                                <div class="item" style="background-image: url('img/5555555.jpg')">
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dd new">
+                                        <h3>公司新闻</h3>
+                                        <p><a href="html/weixiefangyu.html">中央政法委秘书长汪永清一行参观安天哈尔滨总部</a></p>
+                                        <p><a href="html/weixiefangyu.html">海关总署署长、党组书记于广洲一行参观安天总部</a></p>
+                                        <p><a href="html/weixiefangyu.html">第四届网络安全冬训营在哈尔滨召开</a></p>
+                                        <p><a href="html/weixiefangyu.html">大国博弈尽显龙江力量——安天接受黑龙江卫视专访</a></p>
+                                        <p><a href="html/weixiefangyu.html">媒体报道转载：华为副总裁加盟安天 胡忠华掌帅网络安全领军企业</a></p>
+                                    </div>
+                                    <div class="uu">
+                                        <div class="shang">
+                                            <h3 class="pull-left">市场活动</h3>
+                                            <a href="" class="pull-right">更多</a>
+                                        </div>
+                                        <div class="xia">
+
+                                            <p>我们期待与您在各类展会活动中见面交流，体验网络安全的最新发展趋势与解决方案.</p>
+                                            <p>RSA2017，安天在这里等你！</p>
+                                            <p>冬训营专题培训日图文记录</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+    </div>
+</section>
+
+<div class="clearfixd"></div>
+
+<section class="dilan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 text-center">
+                <h3>按访问者</h3>
+                <ul>
+                    <li><a href="html/weixiefangyu.html">运营商</a></li>
+                    <li><a href="html/weixiefangyu.html">金融</a></li>
+                    <li><a href="html/weixiefangyu.html">能源</a></li>
+                    <li><a href="html/weixiefangyu.html">合作伙伴</a></li>
+                    <li><a href="html/weixiefangyu.html">新闻媒体</a></li>
+                    <li><a href="html/weixiefangyu.html">求职者</a></li>
+                    <li><a href="html/weixiefangyu.html">政府</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="html/weixiefangyu.html">公司概况</a></li>
+                    <li><a href="html/weixiefangyu.html">工作机会</a></li>
+                    <li><a href="html/weixiefangyu.html">大事记</a></li>
+                    <li><a href="html/weixiefangyu.html">部分客户</a></li>
+                    <li><a href="html/weixiefangyu.html">公司荣誉</a></li>
+                    <li><a href="html/weixiefangyu.html">诚聘英才</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                 <h3>常用链接</h3>
+                <ul>
+                    <li><a href="html/weixiefangyu.html">产品综述</a></li>
+                    <li><a href="html/weixiefangyu.html">终端侧安全</a></li>
+                    <li><a href="html/weixiefangyu.html">威胁深度鉴定</a></li>
+                    <li><a href="html/weixiefangyu.html">引擎类</a></li>
+                    <li><a href="html/weixiefangyu.html">态势感知</a></li>
+                    <li><a href="html/weixiefangyu.html">威胁响应</a></li>
+                    <li><a href="html/weixiefangyu.html">公告与报告</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                 <h3>服务与支持</h3>
+                <ul>
+                    <li> <a href="html/weixiefangyu.html">服务与支持</a></li>
+                    <li> <a href="html/weixiefangyu.html">软件升级</a></li>
+                    <li> <a href="html/weixiefangyu.html">售后服务</a></li>
+                    <li> <a href="html/weixiefangyu.html">安全培训服务</a> </li>
+                    <li> <a href="html/weixiefangyu.html">安全技术服务</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <a href="html/weixiefangyu.html">公司概况</a>|
+        <a href="html/weixiefangyu.html">联系方式</a>|
+        <a href="html/weixiefangyu.html">申请合作</a>
+        © 2016 ANTIAN 北京安天网络安全技术有限公司
+            <a href="index.html">WWW.ANTIY.CN</a> All Rights Reserved . 京ICP备09068574号-1
+    </div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/less/dist/less.js"></script>
+<script src="js/index.js"></script>
+<script src="js/myApp.js"></script>
+</body>
+</html>

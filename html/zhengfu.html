@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet/less" href="less/index.less">-->
+    <link rel="stylesheet" href="../css/fenye.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../node_modules/angular/angular.js"></script>
+    <title>政府行业解决方案</title>
+</head>
+<body ng-app="myApp">
+<header id="header" ng-controller="headerController">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top hov">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#">
+                    <i></i><p class="pull-left">安天</p><span class="pull-left">|&nbsp&nbsp&nbsp智者安天下</span>
+                </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      
+      
+      <div class="collapse navbar-collapse navbarWidth" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right uls">
+                    <li class="jiage current">
+                      <a href="../index.html">首页</a>
+
+                    </li>
+                    <li >
+                        <a href="weixiefangyu.html" >解决方案</a>
+                        <ul >
+
+                            <li class="pro" ><a href="weixiefangyu.html" target="_blank">威胁防御</a></li>
+                            <li class="pro"><a href="">态势感知</a></li>
+                            <li class="pro"><a href="zhengfu.html">政府行业</a></li>
+                            <li class="pro"><a href="">能源行业</a></li>
+                            <li class="pro"><a href="">政府行业</a></li>
+                            <li class="pro"><a href="">金融行业</a></li>
+                            <li class="pro"><a href="">运营商行业</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">安全产品</a>
+                        <ul>
+                            <li class="pro"><a href="">网络侧安全</a></li>
+                            <li class="pro"><a href="">终端侧安全</a></li>
+                            <li class="pro"><a href="">威胁深度鉴定</a></li>
+                            <li class="pro"><a href="">引擎类</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" >服务与支持</a>
+                        <ul>
+                            <li class="pro"><a href="">软件升级</a></li>
+                            <li class="pro"><a href="">售后服务</a></li>
+                            <li class="pro"><a href="">安全培训服务</a></li>
+                            <li class="pro"><a href="">安全技术服务</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" >合作伙伴</a>
+                        <ul>
+                            <li class="pro"><a href="">渠道政策</a></li>
+                            <li class="pro"><a href="">申请合作</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" >安全研究</a>
+                        <ul>
+                            <li class="pro"><a href="">威胁响应</a></li>
+                            <li class="pro"><a href="">公告与报告</a></li>
+                            <li class="pro"><a href="">安全团队</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" >关于我们</a>
+                        <ul>
+                            <li class="pro"><a href="">走进安天</a></li>
+                            <li class="pro"><a href="">企业新闻</a></li>
+                            <li class="pro"><a href="">工作机会</a></li>
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="weixin pull-right"></a>
+                        <a href="" class="weibo pull-right"></a>
+
+                    </li>
+        
+      </ul>
+               <ul class="hideUl">
+                   <li class="box text-center" ><a href="weixiefangyu.html">下一代威胁防御解决方案</a></li>
+                   <li class="box text-center"><a href="">态势感知</a></li>
+                   <li class="box text-center"><a href="zhengfu.html">政府行业解决方案</a></li>
+                   <li class="box text-center"><a href="">能源行业解决方案</a></li>
+                   <li class="box text-center"><a href="">金融行业解决方案</a></li>
+                   <li class="box text-center"><a href="">运营商行业解决方案</a></li>
+                   <li class="box text-center"><a href="">网络侧安全</a></li>
+                   <li class="box text-center"><a href="">终端侧安全</a></li>
+                   <li class="box text-center"><a href="">威胁深度鉴定</a></li>
+                   <li class="box text-center"><a href="">引擎类</a></li>
+                   <li class="box text-center"><a href="">客户支持</a></li>
+                   <li class="box text-center"><a href="">安全服务</a></li>
+                   <li class="box text-center"><a href="">渠道政策</a></li>
+                   <li class="box text-center"><a href="">申请合作</a></li>
+                   <li class="box text-center"><a href="">威胁响应</a></li>
+                   <li class="box text-center"><a href="">公告与报告</a></li>
+                   <li class="box text-center"><a href="">安全团队</a></li>
+                   <li class="box text-center"><a href="">走进安天</a></li>
+                   <li class="box text-center"><a href="">企业新闻</a></li>
+                   <li class="box text-center"><a href="">工作机会</a></li>
+                   <!--<li class="box text-center"><a href="" class="last btn btn-regist">注册</a></li>-->
+               </ul>
+            </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+</header>
+
+<!--header end-->
+<!--<div class="clearfixd"></div>-->
+<section class="jiejue">
+
+    <div class="row">
+        <div class="container">
+              <div class="col-md-9 left">
+                  <h1>政府行业解决方案</h1>
+                  <h2 class="text-center">现状</h2>
+                  <p>随着电子政务和对外政务服务需求的不断出现，政府单位多通过互联网提供公众服务途径与窗口，客观上造成了政府机关网络由政务办公单一网络向办公网加互联网转化，甚至办公内外网和互联网三张网络并存的局面。复杂的网络结构和业务系统分布使安全边界更加难以界定，安全防御压力增大。</p>
+                  <p> 而电子办公手段中电子邮件和政府网站的使用比例不断升高，近年来通过邮件作为载体的0day攻击和免杀木马等攻击手段使传统边界安全防御更加疲于应付。</p>
+                  <p>而由于我国政府机关掌握大量国计民生关键信息，针对政府机关的APT高级攻击已经不再停留在纸面，基于社会工程学的定向攻击和定向渗透，配合格式文档的定点投放，往往使政府机关防御体系被击穿而长期无法察觉，造成的了巨大政府信息资产损失甚至政治事件。</p>
+               
+                  <h3>面临的挑战</h3>
+                  <h4>1.办公效率与安全防御的冲突</h4>
+                  <p>    政府机关业务系统分布复杂，边界安全设备的升级维护及策略调整过程中首先需要考虑的是对外公众业务的高效稳定访问，边界安全防御深度与业务灵活性矛盾不易协调。</p>
+            
+                  <h4> 2.渔叉钓鱼加格式文档的组合拳</h4>
+                  <p> 政府员工大量对外服务的过程中，员工信息可被轻易查询。针对性的钓鱼邮件很难被有效甄别。配合Word、PDF等格式文档的攻击手段，普通员工几乎没有防御能力。
+                  </p>
+              
+                  <h4> 3.0day漏洞幽灵</h4>
+                  <p> 一旦0day漏洞被通过钓鱼邮件等方式投放至政府业务系统，由于防御系统没有针对的漏洞补丁或防御措施，黑客通过此方式的攻击一旦发生将造成巨大杀伤。</p>
+                  <h4>4.免杀木马防不胜防</h4>
+                  <p>政府系统部署的商业终端杀毒软件的版本信息一旦被攻击者获得，凭借网络流传的扫码平台，能够定制针对性的免杀木马，能够躲避依赖特征进行检测的已知手段。</p>
+                  <h3>解决方案价值</h3>
+                  <p> 安天反APT纵深防御解决方案依托安天16年来在反病毒领域的连续能力积累，融合网络流量侧和终端侧的检测防御技术，辅以深度鉴定能力，能够灵活部署在政府各网络边界，关键业务系统和终端侧，形成立体纵深防御能力。
+                  </p>
+                  <p> 安天PTD威胁检测系统能提供高效准确的检测能力，检出各类已知威胁。对于发现的未知可疑邮件和可疑格式文档，安天PTD和安天PTF能够将可疑文件投递至后端的安天PTA威胁鉴定系统。通过多维度的深入动态分析，安天PTA能够对未知威胁进行准确判定，并联动安天PTF进行策略阻断和通知安天IEP终端防御系统对威胁进行定点主动查杀。</p>
+               <p>安天反APT纵深防御解决方案对已知威胁和未知威胁提供完整的本地化处理，不依赖厂商云端能力（捕获、深度鉴定、处置、全网追溯全过程均在网内完成），有效避免安全性和保密性冲突。</p>
+                  <h3>成功案例</h3>
+                  <p>公安部、国家互联网应急中心、国家通管局、海关总署、中国电信</p>
+              </div>
+              <div class="col-md-3 right">
+                  <a href="weixiefangyu.html"><h4>下一代威胁防御解决方案</h4></a>
+                  <a href="zhengfu.html"><h4>政府行业解决方案</h4></a>
+                  <a href=""><h4>能源行业解决方案</h4></a>
+                  <div class="jinrong">
+                      <h4>金融行业解决方案</h4>
+                      <ul>
+                          <li><a href="">金融行业反高级威胁（APT）</a></li>
+                          <li><a href="">金融行业虚拟化安全解决方案</a></li>
+                           <li><a href="">自助终端（ATM）防护方案</a></li>
+                      </ul>
+                  </div>
+                  <a href=""><h4>运营商解决方案</h4></a>
+                  
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="dilan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <h3>按访问者</h3>
+                <ul>
+                    <li><a href="">运营商</a></li>
+                    <li><a href="">金融</a></li>
+                    <li><a href="">能源</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">新闻媒体</a></li>
+                    <li><a href="">求职者</a></li>
+                    <li><a href="">政府</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="">公司概况</a></li>
+                    <li><a href="">工作机会</a></li>
+                    <li><a href="">大事记</a></li>
+                    <li><a href="">部分客户</a></li>
+                    <li><a href="">公司荣誉</a></li>
+                    <li><a href="">诚聘英才</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>常用链接</h3>
+                <ul>
+                    <li><a href="">产品综述</a></li>
+                    <li><a href="">终端侧安全</a></li>
+                    <li><a href="">威胁深度鉴定</a></li>
+                    <li><a href="">引擎类</a></li>
+                    <li><a href="">态势感知</a></li>
+                    <li><a href="">威胁响应</a></li>
+                    <li><a href="">公告与报告</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>服务与支持</h3>
+                <ul>
+                    <li> <a href="">服务与支持</a></li>
+                    <li> <a href="">软件升级</a></li>
+                    <li> <a href="">售后服务</a></li>
+                    <li> <a href="">安全培训服务</a> </li>
+                    <li> <a href="">安全技术服务</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <a href="">公司概况</a>|
+        <a href="">联系方式</a>|
+        <a href="">申请合作</a>
+        © 2016 ANTIAN 北京安天网络安全技术有限公司
+        <a href="">WWW.ANTIY.CN</a> All Rights Reserved . 京ICP备09068574号-1
+    </div>
+</footer>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/less/dist/less.js"></script>
+<script src="../js/fenye.js"></script>
+<script src="../js/myApp.js"></script>
+</body>
+</html>

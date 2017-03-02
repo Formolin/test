@@ -1,0 +1,164 @@
+.wtf-worktile {
+  font-size: 44px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+.wtf-worktile::after {
+  content: "\e601";
+}
+.wtf-worktiletext {
+  font-size: 135px;
+  line-height: 30px;
+  vertical-align: -30px;
+}
+.wtf-worktiletext::after {
+  content: "\e612";
+}
+#header nav {
+  background-color: #222;
+  height: 68px;
+}
+#header nav .current a {
+  color: #fff;
+}
+#header nav .navbar-brand {
+  position: relative;
+}
+#header nav .navbar-brand i {
+  position: absolute;
+  width: 106px;
+  display: block;
+  top: 5px;
+  left: 40px;
+  height: 54px;
+  background-color: pink;
+  background: url('../img/antiy1.png');
+}
+#header nav .navbar-brand p {
+  padding-top: 10px;
+  color: white;
+  font-size: 32px;
+  padding-left: 150px;
+}
+#header nav .navbar-brand span {
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+#header nav .uls li {
+  padding-top: 10px;
+}
+#header nav .uls li ul {
+  display: none;
+}
+#header nav .uls li ul li {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+#header nav .uls li ul li a {
+  display: block;
+  height: 40px;
+  padding-top: 5px;
+}
+#header nav .uls li ul li a:hover {
+  text-decoration: none;
+  color: #0FCF8C;
+}
+@media (max-width: 767px) {
+  #header nav .uls li {
+    display: none;
+  }
+  #header nav .hideUl {
+    width: 100%;
+    margin-top: 9px;
+    display: block;
+  }
+  #header nav .hideUl li {
+    background-color: #222;
+    line-height: 30px;
+  }
+  #header nav .hideUl li a:hover {
+    text-decoration: none;
+    color: #0FCF8C;
+  }
+}
+#header .hideUl {
+  display: none;
+}
+.jiejue {
+  padding-top: 200px;
+  color: #6f6e6b;
+}
+.jiejue .row {
+  color: #6f6e6b;
+}
+.jiejue .row .left {
+  padding-right: 100px;
+}
+.jiejue .row .left h1 {
+  margin-bottom: 30px;
+}
+.jiejue .row .left h2 {
+  margin-bottom: 20px;
+}
+.jiejue .row .left a {
+  color: #0FCF8C;
+}
+.jiejue .row .left p {
+  text-indent: 2em;
+}
+.jiejue .row .left ul {
+  list-style: disc;
+}
+.jiejue .row .right {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.jiejue .row .right a {
+  color: #6f6e6b;
+  display: block;
+  margin-bottom: 20px;
+}
+.jiejue .row .right a:hover {
+  text-decoration: none;
+  color: #0FCF8C;
+}
+.jiejue .row .right .jinrong ul {
+  list-style: disc;
+}
+.jiejue .row .right .jinrong ul a {
+  color: #6f6e6b;
+  display: block;
+  margin-bottom: 0;
+}
+.jiejue .row .right .jinrong ul a:hover {
+  text-decoration: none;
+  color: #0FCF8C;
+}
+.dilan {
+  color: black;
+  padding-top: 50px;
+}
+.dilan a {
+  color: black;
+  line-height: 30px;
+}
+.dilan a:hover {
+  color: #0FCF8C;
+}
+footer {
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  background-color: #6f6e6b;
+  line-height: 30px;
+}
+footer a {
+  margin: 0 20px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #0FCF8C;
+}
